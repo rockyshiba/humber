@@ -1,0 +1,21 @@
+﻿@model week2.Models.Machine
+@{
+    Layout = null;
+    ViewBag.Header = "Welcome to the TV page";
+    ViewBag.paragraph = "This is the paragraph to the TV page";
+    ViewBag.footer = 2017;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TV</title>
+</head>
+<body>
+    <h1>@Model.Name</h1>
+    <p>@Model.Price</p>
+    <footer>@Model.Model</footer>
+</body>
+</html>
