@@ -1,0 +1,21 @@
+﻿@using week2b.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @foreach(Car c in (ViewData["cars"]) as IEnumerable<Car>) 
+        {
+            @c.Name <br /> @c.Manufacturer <br /> @c.Price
+        }
+    </div>
+</body>
+</html>

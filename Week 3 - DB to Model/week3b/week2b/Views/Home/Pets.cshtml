@@ -1,0 +1,31 @@
+﻿@using week2b.Models
+
+@model IEnumerable<Pet>
+@*@model Pet*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pets</title>
+</head>
+<body>
+    <div>
+        @foreach(Pet p in @Model)
+        {
+            <ul>
+                <li>@p.Id</li>
+                <li>@p.Name</li>
+                <li>@p.Species</li>
+                <li>@p.Breed</li>
+                <li>@p.Price</li>
+            </ul>
+        }
+    </div>
+</body>
+</html>

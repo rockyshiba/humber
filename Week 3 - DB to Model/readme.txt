@@ -1,0 +1,1 @@
+I renamed the folders to Week 3 even though the project says week 2. That's because the powerpoint slides belonged to week 2 last year.
