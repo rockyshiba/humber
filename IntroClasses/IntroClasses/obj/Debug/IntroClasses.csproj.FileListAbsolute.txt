@@ -1,0 +1,40 @@
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\csc.exe
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\vbc.exe
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\IntroClasses.dll.config
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\IntroClasses.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\IntroClasses.pdb
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\obj\Debug\IntroClasses.csprojResolveAssemblyReference.cache
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\obj\Debug\IntroClasses.dll
+C:\Users\LEE 2\Desktop\Humber\5\IntroClasses\IntroClasses\obj\Debug\IntroClasses.pdb
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\csc.exe
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\vbc.exe
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\VBCSCompiler.exe
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\IntroClasses.dll.config
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\IntroClasses.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\IntroClasses.pdb
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\obj\Debug\IntroClasses.csprojResolveAssemblyReference.cache
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\obj\Debug\IntroClasses.dll
+C:\Users\Lee\Desktop\.Net Workshop Wednesdays\IntroClasses\IntroClasses\obj\Debug\IntroClasses.pdb
