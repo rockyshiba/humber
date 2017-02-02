@@ -12,5 +12,8 @@ namespace week4b.Models
         public int Id { get; set; }
         public string First_name { get; set; }
         public string Last_name { get; set; }
+
+        //FOREIGN KEY TO OTHER TABLE
+        public int Department_id { get; set; }
     }
 }

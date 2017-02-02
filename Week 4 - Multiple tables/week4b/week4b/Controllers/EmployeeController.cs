@@ -31,5 +31,20 @@ namespace week4b.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        //GET: list of deparments employee/departments
+        public ActionResult Departments()
+        {
+            List<Department> departments = companyContext.Departments.ToList();
+            return View(departments);
+        }
+
+        //GET: Employees related to department
+        public ActionResult Directory(int? id)
+        {
+            //Return a list of employees based on their department id
+            List<Employee> employees = companyContext.Employees.Where(emp => emp.Department_id == id).ToList();
+            return View(employees);
+        }
     }
 }
