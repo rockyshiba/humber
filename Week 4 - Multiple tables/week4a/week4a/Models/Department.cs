@@ -6,12 +6,10 @@ using System.Web;
 
 namespace week4a.Models
 {
-    [Table("Employee")]
-    public class Employee
+    [Table("Department")]
+    public class Department
     {
         public int Id { get; set; }
-        public string First_name { get; set; }
-        public string Last_name { get; set; }
-        public int Department_id { get; set; }
+        public string Name { get; set; }
     }
 }

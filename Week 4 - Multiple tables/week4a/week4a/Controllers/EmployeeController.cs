@@ -14,7 +14,9 @@ namespace week4a.Controllers
         // GET: Employee
         public ActionResult Index()
         {
-            return View();
+            //List departments
+            List<Department> departments = company.Departments.ToList();
+            return View(departments);
         }
 
         // GET: List of employees
@@ -41,6 +43,13 @@ namespace week4a.Controllers
                 //if no id was provided in the url go to the index action
                 return RedirectToAction("Index");
             }
+        }
+
+        //GET: Employees related to department by Id
+        public ActionResult Department(int? id)
+        {
+            List<Employee> employees = company.Employees.Where(emp => emp.Department_id == id).ToList();
+            return View(employees);
         }
     }
 }
