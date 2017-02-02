@@ -8,4 +8,6 @@ Week 2 - Views and models. Learn how to add views and models. Display models on 
 
 Week 3 - DB and models. From database to model to controller to view.
 
+Week 4 - using multiple tables
+
 Intro to classes - An introduction to classes and their uses.
