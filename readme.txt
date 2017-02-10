@@ -10,4 +10,6 @@ Week 3 - DB and models. From database to model to controller to view.
 
 Week 4 - using multiple tables
 
+Week 5 - using multiple models
+
 Intro to classes - An introduction to classes and their uses.
