@@ -1,0 +1,33 @@
+﻿@model MultiModels.Models.ProgramsFacultyStudents
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3>Programs</h3>
+<ul>
+    @foreach(var item in Model.programs)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<h3>Faculty</h3>
+<ul>
+    @foreach(var item in Model.faculty)
+    {
+        //SELECT f_name, l_name, Name FROM Faculty JOIN Programs ON Faculty.Program_Id = Programs.Id
+        <li>@item.f_name | @item.l_name | @item.Program.Name</li>
+    }
+</ul>
+
+<h3>Students</h3>
+<ul>
+    @foreach(var item in Model.students)
+    {
+        //SELECT f_name, l_name, Name FROM Students JOIN Programs ON Students.Program_Id = Programs.Id
+        <li>@item.f_name | @item.l_name | @item.Program.Name</li>
+    }
+</ul>
