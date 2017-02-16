@@ -12,4 +12,6 @@ Week 4 - using multiple tables
 
 Week 5 - using multiple models
 
+Week 6 - CRUD
+
 Intro to classes - An introduction to classes and their uses.
