@@ -1,0 +1,41 @@
+﻿@model week6b.Models.Chirp
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@*<form method="post">
+    Title:
+    <input type="text" name="Title" id="Title" />
+    <br />
+    Username:
+    <input type="text" name="Username" id="Username" />
+    <br />
+    Email:
+    <input type="email" name="Email" id="Email" />
+    <br />
+    Comment:
+    <textarea name="Comment" id="Comment"></textarea>
+    <br />
+    <input type="submit" value="Create a new Chirp" />
+</form>*@
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Title)
+    @Html.EditorFor(model => model.Title)
+    <br />
+    @Html.LabelFor(model => model.Username)
+    @Html.EditorFor(model => model.Username)
+    <br />
+    @Html.LabelFor(model => model.Email)
+    @Html.EditorFor(model => model.Email)
+    <br />
+    @Html.LabelFor(model => model.Comment)
+    @Html.EditorFor(model => model.Comment)
+    <br />
+    <input type="submit" value="Create a new Chirp" />
+}
+

@@ -1,0 +1,22 @@
+﻿@model week6a.Models.Chrip
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.DisplayFor(model => model.Id)
+    <br />
+    @Html.DisplayFor(model => model.Title)
+    <br />
+    @Html.DisplayFor(model => model.Username)
+    <br />
+    @Html.DisplayFor(model => model.Email)
+    <br />
+    @Html.DisplayFor(model => model.Comment)
+    <input type="submit" value="Delete this entry" />
+}
+

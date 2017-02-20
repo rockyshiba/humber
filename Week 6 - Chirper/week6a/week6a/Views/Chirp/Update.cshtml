@@ -1,0 +1,30 @@
+﻿@model week6a.Models.Chrip
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+<p>Update an existing Chirp</p>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Id)
+    @Html.DisplayFor(model => model.Id)
+    @*@Html.HiddenFor(model => model.Id)*@
+    <br />
+    @Html.LabelFor(model => model.Title)
+    @Html.EditorFor(model => model.Title)
+    <br />
+    @Html.LabelFor(model => model.Username)
+    @Html.EditorFor(model => model.Username)
+    <br />
+    @Html.LabelFor(model => model.Email)
+    @Html.EditorFor(model => model.Email)
+    <br />
+    @Html.LabelFor(model => model.Comment)
+    @Html.EditorFor(model => model.Comment)
+    <input type="submit" value="Update"/>
+}
+
