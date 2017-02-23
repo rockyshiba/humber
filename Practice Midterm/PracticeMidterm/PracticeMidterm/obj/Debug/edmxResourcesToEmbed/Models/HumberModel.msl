@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HumberModelStoreContainer" CdmEntityContainer="HumberContext">
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="HumberModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculty">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="First_name" ColumnName="First_name" />
+          <ScalarProperty Name="Last_name" ColumnName="Last_name" />
+          <ScalarProperty Name="Program_id" ColumnName="Program_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Programs">
+      <EntityTypeMapping TypeName="HumberModel.Program">
+        <MappingFragment StoreEntitySet="Programs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retired_faculty">
+      <EntityTypeMapping TypeName="HumberModel.Retired_faculty">
+        <MappingFragment StoreEntitySet="Retired_faculty">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="First_name" ColumnName="First_name" />
+          <ScalarProperty Name="Last_name" ColumnName="Last_name" />
+          <ScalarProperty Name="Program_name" ColumnName="Program_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
