@@ -27,8 +27,13 @@ namespace PracticeMidterm.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            //The goal here is to display the program name and the faculty related to that program on the same page, but they are represented by different classes. 
             Program program = db.Programs.Find(id);
             List<Faculty> faculties = db.Faculties.Where(f => f.Program_id == id).ToList();
+
+            //To display both models, we need a ViewModel. This model must be custom made so a ProgramFaculty class was made in the Models directory
+            //This viewmodel contains properties that are Typed to other class objects. Each property is a representation of a class object here so we can store our program and faculties objects in those properties, then pass this view model, that now holds
+            //the other models, to the view. 
             ProgramFaculty proFac = new ProgramFaculty();
             proFac.program = program;
             proFac.faculties = faculties;
@@ -36,6 +41,8 @@ namespace PracticeMidterm.Controllers
             {
                 return HttpNotFound();
             }
+            //Don't forget, the model declaration at the top of the view file must be the view model in order for this to work. 
+            //Go to view and see what I mean. Take a look at the HTML helpers using the properties of the ProgramFaculty to access the program and faculty properties. 
             return View(proFac);
         }
 

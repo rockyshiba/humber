@@ -14,4 +14,6 @@ Week 5 - using multiple models
 
 Week 6 - CRUD
 
+Midterm Practice - Contains a solution to the practice midterm posted on blackboard.
+
 Intro to classes - An introduction to classes and their uses.

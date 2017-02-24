@@ -26,10 +26,12 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.First_name)
+            @*@Html.DisplayFor(modelItem => item.First_name)*@
+            @Html.ActionLink(item.First_name, "Details", new { id = item.Id })
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Last_name)
+            @*@Html.DisplayFor(modelItem => item.Last_name)*@
+            @Html.ActionLink(item.Last_name, "Details", new { id = item.Id })
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Program.Name)
