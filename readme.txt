@@ -14,4 +14,8 @@ Week 5 - using multiple models
 
 Week 6 - CRUD
 
+Week 7 - Midterm
+
+Week 8 - Validation
+
 Intro to classes - An introduction to classes and their uses.
