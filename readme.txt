@@ -14,8 +14,12 @@ Week 5 - using multiple models
 
 Week 6 - CRUD
 
+<<<<<<< HEAD
 Week 7 - Midterm
 
 Week 8 - Validation
+=======
+Midterm Practice - Contains a solution to the practice midterm posted on blackboard.
+>>>>>>> 33b4fd8a9146dff813970d85792d027d6ec06cae
 
 Intro to classes - An introduction to classes and their uses.
