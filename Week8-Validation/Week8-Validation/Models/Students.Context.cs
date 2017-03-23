@@ -26,5 +26,6 @@ namespace Week8_Validation.Models
         }
     
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Homepage> Homepages { get; set; }
     }
 }

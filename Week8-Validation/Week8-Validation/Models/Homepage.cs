@@ -12,16 +12,12 @@ namespace Week8_Validation.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class Homepage
     {
         public int Id { get; set; }
-        public string First_name { get; set; }
-        public string Last_name { get; set; }
-        public string s_number { get; set; }
-        public Nullable<System.DateTime> dob { get; set; }
-        public string Full_name { get
-            {
-                return First_name + " " + Last_name;
-            } }
+        public string Title { get; set; }
+        public string Subtitle { get; set; }
+        public string Body { get; set; }
+        public string Lang { get; set; }
     }
 }

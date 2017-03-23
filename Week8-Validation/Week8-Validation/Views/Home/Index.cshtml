@@ -1,0 +1,47 @@
+﻿@model Week8_Validation.Models.Homepage
+
+@{
+    ViewBag.Title = "Index";
+}
+<div><a href="./?lang=fr">French</a></div>
+<div><a href="./?lang=eng">English</a></div>
+<h2>@Model.Title</h2>
+
+<h3>@Model.Subtitle</h3>
+
+<p>@Model.Body</p>
+
+<hr />
+
+@Html.Partial("_Students")
+
+@Html.Action("Students")
+
+@Ajax.ActionLink("Order by last name", "StudentsByName", new AjaxOptions
+{
+    HttpMethod = "GET", UpdateTargetId = "students", InsertionMode = InsertionMode.Replace
+})
+
+
+<div id="students">
+
+</div>
+
+<div id="student-interval">
+
+</div>
+<script>
+    loadStudents();
+    window.setInterval("loadStudents()", 2000);
+
+    function loadStudents() {
+        $.ajax({
+            url: "@Url.Action("Students", "Home")",
+            type: "GET",
+            dataType: "html",
+            success: function (result) {
+                $("#student-interval").html(result);
+            }
+        });
+    }
+</script>
