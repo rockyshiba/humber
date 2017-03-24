@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3 style="color: blue;">Here is an example of a partial view. It has no data and is not strongly typed</h3>
+@Html.Partial("_ExamplePartial")
+
+<h3 style="color: green">Here is an example of a partial view with data. These are strongly typed</h3>
+@Html.Action("Students")
+
+<h3>Here is an example of a partial view with data using AJAX</h3>
+@Ajax.ActionLink("Click here to load students", "Students", new AjaxOptions {
+        HttpMethod = "GET",
+        UpdateTargetId = "students-ajax",
+        InsertionMode = InsertionMode.Replace
+    }) | 
+@Ajax.ActionLink("Click here to load students by their last name alphabetically", "StudentsByName", new AjaxOptions
+{
+    HttpMethod = "get",
+    UpdateTargetId = "students-ajax",
+    InsertionMode = InsertionMode.Replace
+})
+<div id="students-ajax"></div>
+
+<form method="get" action=""></form>
+
+<h3>This is an automatically updating div using AJAX</h3>
+<div id="students-ajax--interval"></div>
+<script>
+    //call a function that will replace the HTML of students-ajax--interval with our results
+    loadStudents();
+    //repeat that function every x amount of time
+    window.setInterval("loadStudents()", 1000);
+    //define function that will replace the HTML of students-ajax--interval
+    function loadStudents() {
+        $.ajax({
+            url: "@Url.Action("Students", "Partialviews")",
+            type: "GET",
+            dataType: "html",
+            success: function (result) {
+                $("#students-ajax--interval").html(result);
+            }
+        });
+    }
+</script>

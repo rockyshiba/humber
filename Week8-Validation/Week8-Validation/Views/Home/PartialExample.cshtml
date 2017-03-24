@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "PartialExample";
+}
+
+<h2>PartialExample</h2>
+
+<h3>Below is a partial view with no data</h3>
+@Html.Partial("_PartialViewExample")
+
+<h3>Below is a partial view <em>with data</em></h3>
+@Html.Action("PartialExampleWithData")
+
+<h3>Below is a link that will display a partial view using AJAX</h3>
+@Ajax.ActionLink("Click here to load students from database", "PartialExampleWithData",
+    new AjaxOptions {
+        HttpMethod = "GET",
+        UpdateTargetId = "students-example",
+        InsertionMode = InsertionMode.Replace
+    })
+
+@Ajax.ActionLink("Students in alphabetical order", "PartialExampleWithDataAlphabetical",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "students-example",
+        InsertionMode = InsertionMode.Replace
+    })
+
+<div id="students-example">
+
+</div>
+
+<div id="students-example--interval"></div>
+<script>
+    //call function
+    intervalExample();
+    window.setInterval("intervalExample()", 1000);
+    //set function to interval
+
+    //define function
+    function intervalExample() {
+        $.ajax({
+            url: "@Url.Action("PartialExampleWithData", "Home")",
+            type: "GET",
+            dataType: "html",
+            success: function (result) {
+                $("#students-example--interval").html(result);
+            }
+        });
+    }
+</script>

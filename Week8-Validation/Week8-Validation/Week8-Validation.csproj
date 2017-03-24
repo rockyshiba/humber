@@ -140,6 +140,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomepagesController.cs" />
+    <Compile Include="Controllers\PartialviewsController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,6 +194,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Students.cshtml" />
     <Content Include="Views\Shared\_StudentsData.cshtml" />
+    <Content Include="Views\Shared\_PartialViewExample.cshtml" />
+    <Content Include="Views\Home\PartialExample.cshtml" />
+    <Content Include="Views\Shared\_PartialViewWithData.cshtml" />
+    <Content Include="Views\Partialviews\Index.cshtml" />
+    <Content Include="Views\Shared\_ExamplePartial.cshtml" />
+    <Content Include="Views\Shared\_ExamplePartialData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

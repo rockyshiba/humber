@@ -30,6 +30,32 @@ namespace Week8_Validation.Controllers
             return View(homepage);
         }
 
+        public ActionResult PartialExample()
+        {
+            //This action will contain our partial views
+            return View();
+        }
+
+        public PartialViewResult PartialExampleWithData()
+        {
+            List<Student> students = db.Students.ToList();
+            //(name of partial view in string, model)
+            return PartialView("_PartialViewWithData", students);
+        }
+
+        public PartialViewResult PartialExampleWithDataAlphabetical()
+        {
+            List<Student> students = db.Students.OrderBy(stus => stus.First_name).ToList();
+            return PartialView("_PartialViewWithData", students);
+        }
+
+
+
+
+
+
+
+
         public PartialViewResult Students()
         {
             List<Student> stus = db.Students.ToList();
