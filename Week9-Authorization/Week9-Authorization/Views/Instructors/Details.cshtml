@@ -1,0 +1,50 @@
+﻿@model Week9_Authorization.Models.Instructors
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Instructors</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.F_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.L_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.L_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Programs.Program_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Programs.Program_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
