@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Security;
+using System.Web.Security; //For authorization classes, include this
 using Week9_Authorization.Models;
 
 namespace Week9_Authorization.Controllers
@@ -44,6 +44,7 @@ namespace Week9_Authorization.Controllers
             {
                 return Redirect(returnUrl);
             }
+            ViewBag.Message = "You have been successfully logged out"; 
             return RedirectToAction("Login");
         }
 
